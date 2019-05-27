@@ -2,8 +2,11 @@
   <div class="search-bar">
     <h1 class="heading">Gif Search</h1>
     <div>
-      <input name="search" #searchTerm>
-      <button (click)="performSearch(searchTerm)">Search</button>
+      <input name="search" class="search" placeholder="What are you looking for?" #searchTerm>
+      <select class="dropdown" name="ShowAlls">
+        <option default>ShowAlls</option>
+      </select>
+      <button class="searchBtn" (click)="performSearch(searchTerm)"><i class="fa fa-search"></i></button>
     </div>
     <p>You can search any gif with our search</p>
     <p>Everything you need for an creative projects.websites,banners,presentations,magazines and advertising.</p>
@@ -19,11 +22,9 @@
       <p>and get free content every week.</p>
       <input class="email" type="search" placeholder="Enter your email...">
       <button class="signUp">Sign Up</button>
-
     </div>
     <div class="right-footer">
       <h4>Browse by Categories</h4>
-
       <table>
         <tr>
           <td>Graphics</td>
@@ -56,7 +57,27 @@
           <td>Business Cards</td>
         </tr>
       </table>
-
     </div>
   </div>
+
+  <div class="footer-info">
+    <ul class="breadcrumb">
+      <li>Affiliates</li>
+      <li>Contributors</li>
+      <li>Press/Media</li>
+      <li>Careers</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <div class="social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-rss"></a>
+    </div>
+  </div>
+
+  <div class="copyright">Copyright@ my company All rights reserved</div>
+
+
 </div>

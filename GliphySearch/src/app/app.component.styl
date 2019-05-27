@@ -1,18 +1,40 @@
 .dialogWrapper
+
     .search-bar
         height: 200px;
-        background: orange;
+        background: darkorange;
         > div, h1, p
             text-align: center;
             color: white;
         .heading
             color: white;
+        .search
+            width: 250px;
+            height: 31px;
+            border-width: 0.5px;
+            border-radius: 5px 0 0 5px;
+            padding: 6px;  
+        .dropdown
+            width: 100px;
+            height: 44px;
+            border-width: 0.5px;
+            background: #F0F0F0;
+            color: #A0A0A0;
+        .searchBtn     
+            width: 50px;
+            height: 43px;
+            border-radius: 0 5px 5px 0; 
+            border-width: 0px;
+            background: black
+            color: white
+            font-size:15px;
     .main-container
-        height: 500px;
+        min-height: 300px;
         > div
             margin: 9px;
             width: 31.7%;
             display: inline-block;
+            flex-direction: column;
             > img
                 width: 100%;
     .footer
@@ -39,6 +61,40 @@
                 height: 41px;
                 border-width: 0px;
                 margin-bottom: 10px;
+                padding-left: 5px;
+                background: #282828
+                color: white !important
+                border: 1px solid gray
+    .footer-info
+        .breadcrumb
+            display: inline-block
+        ul.breadcrumb
+            list-style: none;
+        ul.breadcrumb li
+            display: inline;
+            font-size: 18px;   
+        ul.breadcrumb li+li:before
+            padding: 8px;
+            content: "/\00a0";  
+        .social
+            display: inline-block;
+            float: right
+            > a  
+                width: 43px;
+                height: 43px;
+                border-radius: 30px;
+                border: 1px solid #a0a0a0;
+                text-align: center;
+                line-height: 3;
+                color: #a0a0a0;
+                margin-right: 9px;
+                margin-top: 9px;
+    .copyright
+        color: gray;
+        padding-left: 37px;
+        font-size:11px;
+
+
 
 table {
   border-collapse: collapse;
@@ -50,6 +106,6 @@ td {
     color: white;
     font-size: 10px;
     opacity: 0.7;
-}                
+}
 
 
