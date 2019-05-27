@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GliphysearchService } from './gliphysearch.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GliphySearch';
+
+  giphies = [];
+
+  constructor(private _service: GliphysearchService) {
+  }
+
+  performSearch(searchTerm: HTMLInputElement): void {
+    this._service.getGliphy(searchTerm).subscribe((res: any) => {
+      this.giphies = res.data;
+      console.log(this.giphies);
+    });
+  }
 }
